@@ -1,0 +1,6 @@
+{
+  "name": "Armored Knight 3D Showcase",
+  "description": "Interactive 3D model viewer and cinematic showcase for the Winged Armored Knight in Silver Armor with Blue Cape and Icy Helm.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
