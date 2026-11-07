@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Volume2, VolumeX, Maximize2, Minimize2, Info, ExternalLink, Sparkles } from 'lucide-react';
+import { Camera, Volume2, VolumeX, Maximize2, Minimize2, Info, Sparkles } from 'lucide-react';
 
 interface HeaderNavProps {
   soundEnabled: boolean;
@@ -93,17 +93,6 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
         >
           <Info className="w-4 h-4" />
         </button>
-
-        <a
-          href="https://studio.tripo3d.ai/3d-model/3baf7a5e-83b0-47ff-b0a5-40ccd8dde884?utm_campaign=3d_model&invite_code=B1GSFP"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-lg text-slate-300 hover:text-sky-300 hover:bg-slate-800/60 transition-colors"
-          title="Open in Tripo3D Studio"
-          aria-label="Open Tripo3D"
-        >
-          <ExternalLink className="w-4 h-4" />
-        </a>
 
         <button
           onClick={onToggleFullscreen}

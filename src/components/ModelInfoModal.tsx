@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, ExternalLink, Shield, Cpu, Sparkles, User, Box } from 'lucide-react';
+import { X, Download, Shield, Sparkles, User } from 'lucide-react';
 import { ModelStats } from '../types.ts';
 
 interface ModelInfoModalProps {
@@ -173,15 +173,9 @@ export const ModelInfoModal: React.FC<ModelInfoModalProps> = ({ isOpen, onClose,
 
         {/* Modal Footer Actions */}
         <div className="p-4 sm:p-5 border-t border-slate-800 bg-slate-950/90 flex flex-wrap items-center justify-between gap-3">
-          <a
-            href="https://studio.tripo3d.ai/3d-model/3baf7a5e-83b0-47ff-b0a5-40ccd8dde884?utm_campaign=3d_model&invite_code=B1GSFP"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-300 hover:text-white transition-colors"
-          >
-            <ExternalLink className="w-3.5 h-3.5 text-sky-400" />
-            <span>Buka di Tripo3D Studio</span>
-          </a>
+          <div className="text-xs text-slate-400 font-mono">
+            ID: <span className="text-slate-300">{stats?.id || '3baf7a5e-83b0-47ff-b0a5-40ccd8dde884'}</span>
+          </div>
 
           <div className="flex items-center gap-2">
             <a
