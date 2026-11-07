@@ -22,28 +22,41 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
 }) => {
   return (
     <header className="absolute top-0 left-0 right-0 z-20 pointer-events-none p-4 md:p-6 flex items-start justify-between">
-      {/* Title & Badge */}
-      <div className="pointer-events-auto flex flex-col gap-1.5">
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-sky-500/10 border border-sky-400/30 flex items-center justify-center text-sky-400 shadow-sm shadow-sky-500/20">
-            <Sparkles className="w-4 h-4" />
+      {/* Title & Brand Badge */}
+      <div className="pointer-events-auto flex flex-col gap-2">
+        <div className="flex items-center gap-3 bg-slate-950/80 border border-slate-800/90 py-1.5 px-3 rounded-2xl shadow-xl backdrop-blur-md">
+          <div className="relative w-11 h-11 rounded-xl bg-slate-900 border border-sky-400/40 p-1 flex items-center justify-center overflow-hidden shadow-inner shadow-sky-500/20">
+            <img
+              src="/images/logo_veterna.png"
+              alt="Logo Veterna"
+              className="w-full h-full object-contain filter drop-shadow"
+            />
           </div>
           <div>
-            <h1 className="text-xl md:text-2xl font-bold tracking-wider text-slate-100 font-display drop-shadow-md">
+            <div className="flex items-center gap-1.5">
+              <span className="text-[11px] font-bold tracking-widest uppercase font-mono text-sky-400">
+                VETERNA
+              </span>
+              <span className="inline-block w-1 h-1 rounded-full bg-sky-400/70" />
+              <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">
+                Official Mascot
+              </span>
+            </div>
+            <h1 className="text-base sm:text-xl font-bold tracking-wide text-slate-100 font-display drop-shadow-md">
               {characterTitle}
             </h1>
-            <p className="text-xs text-sky-300/80 font-medium tracking-wide">
-              Winged Armored Knight • Silver PBR Armor & Icy Helm
-            </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-2 mt-1">
+        <div className="flex items-center gap-2 pl-1">
           <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-slate-900/80 border border-slate-700/60 text-slate-300">
-            Tripo3D Model
+            Karakter 3D
           </span>
           <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono text-sky-400 bg-sky-950/60 border border-sky-800/50">
             PBR Ready • Meshopt
+          </span>
+          <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono text-amber-400 bg-amber-950/40 border border-amber-800/40">
+            Burung Hantu
           </span>
         </div>
       </div>

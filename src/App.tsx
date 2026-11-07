@@ -84,7 +84,7 @@ export default function App() {
       const dataUrl = snapshotExporterRef.current();
       const a = document.createElement('a');
       a.href = dataUrl;
-      a.download = `aethelgard-knight-${Date.now()}.png`;
+      a.download = `maskot-burung-hantu-veterna-${Date.now()}.png`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -168,7 +168,7 @@ export default function App() {
 
       {/* Top Navigation Overlay */}
       <HeaderNav
-        characterTitle="Aethelgard The Frostbound"
+        characterTitle="Maskot Burung Hantu Veterna"
         soundEnabled={settings.soundEnabled}
         onToggleSound={() =>
           setSettings((prev) => ({ ...prev, soundEnabled: !prev.soundEnabled }))

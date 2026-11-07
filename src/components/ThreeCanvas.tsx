@@ -316,9 +316,9 @@ export const ThreeCanvas: React.FC<ThreeCanvasProps> = ({
           materials: matSet.size || 1,
           fileSize: '17.9 MB',
           id: '3baf7a5e-83b0-47ff-b0a5-40ccd8dde884',
-          name: 'Armored Knight 3D Model',
+          name: 'Maskot Burung Hantu Veterna',
           description: 'Winged armored knight in silver armor with blue cape and icy helm',
-          author: 'abhiprayadamas2008',
+          author: 'abhiprayadamas2008 (Veterna)',
         });
 
         onLoadProgress(100, 'Model ready');

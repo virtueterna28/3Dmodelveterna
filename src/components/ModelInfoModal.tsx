@@ -35,19 +35,29 @@ export const ModelInfoModal: React.FC<ModelInfoModalProps> = ({ isOpen, onClose,
             <X className="w-4 h-4" />
           </button>
 
-          {/* Banner Title */}
-          <div className="absolute bottom-4 left-5 right-5 flex items-end justify-between">
+          {/* Banner Title & Veterna Brand */}
+          <div className="absolute bottom-4 left-5 right-5 flex items-end gap-3.5">
+            <div className="w-14 h-14 rounded-xl bg-slate-950/90 border border-sky-400/40 p-1.5 flex items-center justify-center shrink-0 shadow-lg shadow-sky-500/20">
+              <img
+                src="/images/logo_veterna.png"
+                alt="Logo Veterna"
+                className="w-full h-full object-contain filter drop-shadow"
+              />
+            </div>
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-sky-950/80 border border-sky-700/60 text-sky-300">
-                  Tripo3D Karakter
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-sky-950/80 border border-sky-700/60 text-sky-300 font-bold">
+                  VETERNA
                 </span>
                 <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 border border-slate-700 text-slate-300">
-                  PBR Asset
+                  Maskot Resmi
+                </span>
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-950/40 border border-amber-800/40 text-amber-300">
+                  Burung Hantu
                 </span>
               </div>
-              <h2 className="text-2xl font-bold font-display text-white tracking-wide">
-                Aethelgard The Frostbound
+              <h2 className="text-xl sm:text-2xl font-bold font-display text-white tracking-wide">
+                Maskot Burung Hantu Veterna
               </h2>
               <p className="text-xs text-sky-300/90 font-medium">
                 Winged Armored Knight in Silver Armor with Blue Cape and Icy Helm
@@ -97,21 +107,27 @@ export const ModelInfoModal: React.FC<ModelInfoModalProps> = ({ isOpen, onClose,
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
               <div>
+                <span className="text-slate-400">Entitas: </span>
+                <span className="text-sky-300 font-semibold">
+                  Veterna (Virtu Eterna)
+                </span>
+              </div>
+              <div>
                 <span className="text-slate-400">Kreator: </span>
                 <span className="text-slate-200 font-mono font-medium">
                   {stats?.author || 'abhiprayadamas2008'}
                 </span>
               </div>
-              <div>
+              <div className="sm:col-span-2">
                 <span className="text-slate-400">Model ID: </span>
                 <span className="text-slate-200 font-mono text-[11px]">
                   {stats?.id || '3baf7a5e-83b0-47ff-b0a5-40ccd8dde884'}
                 </span>
               </div>
               <div className="sm:col-span-2">
-                <span className="text-slate-400">Prompt Asli: </span>
-                <span className="text-slate-300 italic">
-                  "{stats?.description || 'winged armored knight in silver armor with blue cape and icy helm'}"
+                <span className="text-slate-400">Deskripsi Maskot: </span>
+                <span className="text-slate-300">
+                  Maskot Burung Hantu Veterna melambangkan kebijaksanaan dan perlindungan abadi, diwujudkan dalam rupa ksatria bersayap perak dengan helm kristal es dan jubah biru Veterna.
                 </span>
               </div>
             </div>
@@ -125,23 +141,23 @@ export const ModelInfoModal: React.FC<ModelInfoModalProps> = ({ isOpen, onClose,
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
               <div className="bg-slate-900/40 border border-slate-800/60 p-2.5 rounded-xl">
-                <div className="font-semibold text-sky-300">Glacial Helm (Helm Kristal Es)</div>
+                <div className="font-semibold text-sky-300">Glacial Helm (Helm Burung Hantu Es)</div>
                 <p className="text-slate-400 mt-0.5 text-[11px]">
-                  Helm perak bertanduk es glasial dengan visor bercahaya biru magis.
+                  Helm bertanduk es glasial khas burung hantu dengan visor bercahaya biru magis.
                 </p>
               </div>
 
               <div className="bg-slate-900/40 border border-slate-800/60 p-2.5 rounded-xl">
-                <div className="font-semibold text-sky-300">Aegis Wings (Sayap Perak Bersayap)</div>
+                <div className="font-semibold text-sky-300">Aegis Wings (Sayap Perak Burung Hantu)</div>
                 <p className="text-slate-400 mt-0.5 text-[11px]">
-                  Pelat sayap mekanikal di punggung untuk manuver dan pertahanan angkasa.
+                  Pelat sayap mekanikal di punggung melambangkan kecepatan dan kebebasan terbang.
                 </p>
               </div>
 
               <div className="bg-slate-900/40 border border-slate-800/60 p-2.5 rounded-xl">
-                <div className="font-semibold text-sky-300">Cobalt Silk Mantle (Jubah Biru)</div>
+                <div className="font-semibold text-sky-300">Cobalt Silk Mantle (Jubah Biru Veterna)</div>
                 <p className="text-slate-400 mt-0.5 text-[11px]">
-                  Jubah sutra kobalt beraksen kerajaan yang menjuntai di balik pelat sayap.
+                  Jubah sutra kobalt beraksen kehormatan khas identitas warna Veterna.
                 </p>
               </div>
 
@@ -170,7 +186,7 @@ export const ModelInfoModal: React.FC<ModelInfoModalProps> = ({ isOpen, onClose,
           <div className="flex items-center gap-2">
             <a
               href="/models/armored_knight.glb"
-              download="armored_knight_tripo3d.glb"
+              download="maskot_burung_hantu_veterna.glb"
               className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-sky-500 hover:bg-sky-400 text-slate-950 shadow-md shadow-sky-500/20 transition-all font-medium"
             >
               <Download className="w-3.5 h-3.5" />
