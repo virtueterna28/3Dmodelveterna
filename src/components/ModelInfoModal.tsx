@@ -107,21 +107,21 @@ export const ModelInfoModal: React.FC<ModelInfoModalProps> = ({ isOpen, onClose,
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
               <div>
-                <span className="text-slate-400">Entitas: </span>
+                <span className="text-slate-400">Nama Maskot: </span>
                 <span className="text-sky-300 font-semibold">
-                  Veterna (Virtu Eterna)
+                  burung hantu veterna
                 </span>
               </div>
               <div>
                 <span className="text-slate-400">Kreator: </span>
                 <span className="text-slate-200 font-mono font-medium">
-                  {stats?.author || 'abhiprayadamas2008'}
+                  {stats?.author || 'Dzaky Nafil'}
                 </span>
               </div>
               <div className="sm:col-span-2">
                 <span className="text-slate-400">Model ID: </span>
                 <span className="text-slate-200 font-mono text-[11px]">
-                  {stats?.id || '3baf7a5e-83b0-47ff-b0a5-40ccd8dde884'}
+                  {stats?.id || '11289'}
                 </span>
               </div>
               <div className="sm:col-span-2">
@@ -174,7 +174,7 @@ export const ModelInfoModal: React.FC<ModelInfoModalProps> = ({ isOpen, onClose,
         {/* Modal Footer Actions */}
         <div className="p-4 sm:p-5 border-t border-slate-800 bg-slate-950/90 flex flex-wrap items-center justify-between gap-3">
           <div className="text-xs text-slate-400 font-mono">
-            ID: <span className="text-slate-300">{stats?.id || '3baf7a5e-83b0-47ff-b0a5-40ccd8dde884'}</span>
+            ID: <span className="text-slate-300">{stats?.id || '3dveterna28'}</span>
           </div>
 
           <div className="flex items-center gap-2">
